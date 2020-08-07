@@ -4,7 +4,7 @@ import Fux from '../../../hoc/fux';
 import BackDrop from '../BackDrop/BackDrop';
 class Modal extends Component{
     shouldComponentUpdate(nextProp,nextState){
-        return nextProp.show!=this.props.show||nextProp.children!==this.props.children;
+        return nextProp.show!==this.props.show||nextProp.children!==this.props.children;
     }
     render(){
         return (
